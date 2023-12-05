@@ -31,4 +31,27 @@ print(x) # Sapi
 print(y) # Kuda
 print(z) # Jerapah
 
+# Variable keluaran #
+x = "mobil"
+print("Saya memiliki" + x)
 
+x = "mobil"
+y = "fortuner"
+z = x + " " +y
+print(z)
+
+# Variable global #
+# Variable global adalah variable yang dibuat diluar function
+x = "Susu"
+def myfunc():
+    print(x)
+myfunc()
+# Membuat variable global didalam fungsi, apakah bisa? ya, bisa
+x = "kuda"
+def myfunc():
+    global x 
+    x = "Ini variable global didalam fungsi"
+    print(x)
+myfunc()
+print(x)
+# 
